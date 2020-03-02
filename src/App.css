@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+body {
+  font-family: 'Lato', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #B2B2B2;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #B2B2B2;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #B2B2B2;
+}
+#root { 
+  background-image: url(/static/media/header.0b1bddd8.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: 0 -11rem;
+  position: relative;
+  padding-top: 12rem;
+}
+.app {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 100vh; 
+}
+.styTweet{
+  display: inline-flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+} 
+.search-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+  width: 550px; 
+  margin-top: -6rem;
+}
+.search-box .header {
+  padding: 1rem;
+  text-align: center;
+  background-color: #FCFCFC;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.search { 
+  padding: 1rem; 
+  text-align: center;
+}
+label[for="search-names"] {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+label[for="search-names"]::before{
+    content: '';
+    background-image: url(/static/media/search.b3e0f54e.svg);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 1rem;
+    background-repeat: no-repeat;
+    top: 1rem;
+}
+.search input {
+  font-family: 'Roboto Slab' ;
+  font-size: 16px;
+  width: 100%;
+  background-color: #FCFCFC;
+  border: 1px solid #EAEBF1;
+  border-radius: 2rem;
+  padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+  transition: border-color ease-in 200ms;
+}
+.search input:focus {
+  outline: none;
+  border-color: #45c1bd;
+}
+.users-list {
+  display: flex;
+  flex-direction: column; 
+  padding: 1rem 3rem 0;
+  /* box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19); */
+}
+.users-list .user {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  background-color: #f1f1f1;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+}
+.users-list .user .info h4 { 
+  font-family: 'Roboto Slab' ;
+  margin-bottom: 0.75rem;
+}
+.users-list .user > p {
+  margin-bottom: 1rem;
+}
+.users-list .user .avatar {
+  margin-right: 1rem; 
+}
+.users-list .user .avatar img { 
+  border-radius: 1rem;
+}
+
+.tweets {
+  display: flex; 
+  flex-direction: column; 
+  padding: 0;
+  margin: 0;
+}
+
+.tweets > div { 
+  padding: 0.5rem 1rem 0.5rem 4.3rem;
+  border-radius: 0.5rem; 
+  background-color: #FCFCFC;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.tweets > div::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 43px;
+  height: 43px;
+  background-image: url(../src/assets/ico.png);
+  background-repeat: no-repeat;
+  top:0.75rem;
+  left: 0.75rem;
+}
+.tweets > div p { 
+  margin-bottom: 0.5rem;
+}
+.tweets > div span { 
+  font-size: 0.8rem;
+  color: dimgrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
